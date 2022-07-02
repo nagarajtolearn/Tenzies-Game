@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #0b2434;
+  margin: 120px;
+  /* background-image: url("../Dice.jpg"); */
+  background-image: url("../img_tree.gif");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+main {
+  height: 400px;
+  max-width: 800px;
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+.dice-container {
+  display: grid;
+  grid-template: auto auto/ repeat(5, 1fr);
+  gap: 20px;
+}
+
+.die-face {
+  height: 50px;
+  width: 50px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.die-num {
+  font-size: 2rem;
+}
+
+.roll-dice {
+  width: 100px;
+  height: 50px;
+  margin: 35px auto;
+  background: #5035ff;
+  box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  border: none;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16.384px;
+  line-height: 19px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.instructions {
+  font-size: medium;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
